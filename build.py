@@ -87,7 +87,6 @@ def build_index():
     body = f"""<main class="wrap">
 <section class="hero">
   <div class="eyebrow">Tools for post production</div>
-  <h1>Pro Tools plug-ins and Mac apps</h1>
   <p class="lede">Built in a working New York post house — for monitoring, routing, metering and remote sessions.</p>
   <div class="actions"><a class="btn primary" href="#apps">See the apps</a></div>
 </section>
