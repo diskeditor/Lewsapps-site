@@ -73,7 +73,7 @@ nav.top a:hover { color: var(--text); background: var(--raised); text-decoration
 .toolbar { display: flex; justify-content: center; margin: 8px 0 28px; }
 
 /* app grid */
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 22px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
 .app { padding: 22px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
 .app::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 2px; background: var(--c); opacity: .85; }
 .app .head { display: flex; gap: 14px; align-items: center; }
