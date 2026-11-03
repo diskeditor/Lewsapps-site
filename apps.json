@@ -58,7 +58,7 @@
     "id": "silencer",
     "name": "Silencer",
     "kind": "Pro Tools plug-in",
-    "color": "#e0675e",
+    "color": "#9b6dff",
     "tagline": "Mute or dim, by key or MIDI",
     "summary": "Mute or dim a track from a keystroke or MIDI command, with latch or momentary modes and toggle and reverse combinations.",
     "features": [
@@ -112,7 +112,7 @@
     "id": "gauge",
     "name": "Gauge",
     "kind": "Pro Tools plug-in",
-    "color": "#f0d75a",
+    "color": "#9b6dff",
     "tagline": "Loudness meter",
     "summary": "Integrated loudness, true peak and short-term levels, right on the track.",
     "features": [
