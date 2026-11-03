@@ -149,3 +149,17 @@ footer.site a { color: var(--subtle); }
 img.icon.pic { background: none !important; border: 0; padding: 0; object-fit: cover; box-shadow: 0 6px 12px rgba(0,0,0,.55), 0 0 18px color-mix(in srgb, var(--c) 30%, transparent); }
 .others img.icon.pic { box-shadow: 0 3px 5px rgba(0,0,0,.5); }
 .tx-logo { width: min(260px, 100%); height: auto; display: block; margin: 10px 0 6px; filter: drop-shadow(0 6px 10px rgba(0,0,0,.55)); }
+
+/* compact cards: up to 8 across */
+.wrap { max-width: 1400px; }
+.grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 14px; }
+.app { padding: 16px 12px 14px; gap: 10px; text-align: center; }
+.app .head { flex-direction: column; gap: 10px; }
+.app .head .icon { width: 52px; height: 52px; }
+.app h3 { font-size: 16px; line-height: 1.2; }
+.app .kind { font-size: 9.5px; letter-spacing: .1em; margin-bottom: 3px; }
+.app > p { font-size: 13px; line-height: 1.45; }
+.app .req { font-size: 11px; line-height: 1.4; }
+.app .actions { flex-direction: column; gap: 6px; padding-top: 2px; align-items: stretch; }
+.app .actions .btn.sm { height: 32px; padding: 0 8px; font-size: 12px; justify-content: center; }
+.app .actions .btn.sm { white-space: nowrap; }
