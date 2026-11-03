@@ -70,9 +70,16 @@ def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post pr
 """
 
 
+def shot(a, up=""):
+    return f"{up}assets/shots/{a['id']}.png" if (ROOT / "assets" / "shots" / f"{a['id']}.png").exists() else None
+
+
 def app_card(a):
+    sh = shot(a)
+    thumb = f'<a class="thumb" href="apps/{a["id"]}.html"><img src="{sh}" alt="{e(a["name"])} screenshot" loading="lazy"></a>' if sh else ""
     return f"""<article class="card app" style="--c:{a['color']}" data-kind="{'plugin' if 'plug-in' in a['kind'].lower() else 'app'}">
   <div class="head">{icon(a)}<div><div class="kind">{e(a['kind'])}</div><h3>{e(a['name'])}</h3></div></div>
+  {thumb}
   <p>{e(a['summary'])}</p>
   <div class="req">{REQ}</div>
   <div class="actions">
@@ -133,6 +140,8 @@ def build_app(a):
     others = "".join(
         f'<a class="chip" style="--c:{o["color"]}" href="{o["id"]}.html">{icon(o, up="../")}{e(o["name"])}</a>'
         for o in APPS if o["id"] != a["id"])
+    sh = shot(a, "../")
+    shot_html = f'<figure class="card shot"><a href="{sh}"><img src="{sh}" alt="{e(a["name"])} screenshot"></a></figure>' if sh else ""
     body = f"""<main class="wrap" style="--c:{a['color']}">
 <div class="crumb"><a href="../index.html#apps">← All apps</a></div>
 <div class="detail">
@@ -151,6 +160,7 @@ def build_app(a):
     <dl class="meta"><dt>Version</dt><dd>{e(a['version'])}</dd><dt>Requires</dt><dd>macOS 13 Ventura or later</dd><dt>Runs on</dt><dd>Apple silicon or Intel</dd><dt>Type</dt><dd>{e(a['kind'])}</dd></dl>
   </div>
 </div>
+{shot_html}
 <section class="others"><div class="eyebrow" style="margin-bottom:12px">More apps</div><div class="row">{others}</div></section>
 </main>"""
     (OUT / "apps" / f"{a['id']}.html").write_text(
