@@ -141,7 +141,13 @@ def build_app(a):
         f'<a class="chip" style="--c:{o["color"]}" href="{o["id"]}.html">{icon(o, up="../")}{e(o["name"])}</a>'
         for o in APPS if o["id"] != a["id"])
     sh = shot(a, "../")
-    shot_html = f'<figure class="card shot"><a href="{sh}"><img src="{sh}" alt="{e(a["name"])} screenshot"></a></figure>' if sh else ""
+    wide = ""
+    if sh:
+        import struct
+        with open(ROOT / "assets" / "shots" / f"{a['id']}.png", "rb") as fh:
+            w, h = struct.unpack(">II", fh.read(24)[16:24])
+        wide = " wide" if w / h > 2.2 else ""
+    shot_html = f'<figure class="card shot{wide}"><a href="{sh}"><img src="{sh}" alt="{e(a["name"])} screenshot"></a></figure>' if sh else ""
     body = f"""<main class="wrap" style="--c:{a['color']}">
 <div class="crumb"><a href="../index.html#apps">← All apps</a></div>
 <div class="detail">

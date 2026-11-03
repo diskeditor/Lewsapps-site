@@ -209,3 +209,4 @@ figure.shot img { max-width: min(calc(100vw - 60px), 520px); max-height: 280px; 
 .detail ul.feat li::before { top: 11px; width: 8px; height: 8px; }
 .detail .meta { font-size: 13px; gap: 4px 14px; }
 .detail .side { grid-template-columns: 1.35fr 1fr; }
+figure.shot.wide img { max-width: min(calc(100vw - 60px), 1150px); max-height: 420px; }
