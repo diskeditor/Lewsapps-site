@@ -170,5 +170,4 @@ img.icon.pic { background: none !important; border: 0; padding: 0; object-fit: c
 .app .thumb:hover { outline: 1px solid var(--c); }
 figure.shot { margin: 28px 0 0; padding: 24px; display: flex; justify-content: center; }
 figure.shot img { max-width: 100%; height: auto; display: block; border-radius: 10px; box-shadow: 0 18px 40px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06); }
-.app .kind { display: none; }
 .detail .main .kind { display: none; }
