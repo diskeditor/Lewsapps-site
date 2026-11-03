@@ -1,0 +1,128 @@
+[
+  {
+    "id": "cone",
+    "name": "Cone",
+    "kind": "Mac app",
+    "color": "#9b6dff",
+    "tagline": "Multi-channel speaker controller",
+    "summary": "Calibrate and control speaker systems from 2.0 up to 7.1.4, with a simple interface, powerful processing and a dedicated iPad remote.",
+    "features": [
+      "Speaker systems from 2.0 to 7.1.4",
+      "Calibration and room tuning",
+      "Cone Remote for iPad moves control off the computer screen",
+      "Multiple iPads can connect to one Mac"
+    ],
+    "version": "3.6.68",
+    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Cone-Installer-3.6.68.pkg",
+    "download_label": "Download",
+    "support": "https://lewsapps.com/cone-support.html"
+  },
+  {
+    "id": "paddle",
+    "name": "Paddle",
+    "kind": "Mac app",
+    "color": "#5b9bff",
+    "tagline": "PEC/Direct controller for Pro Tools",
+    "summary": "Arming and input/output switching for Pro Tools, with routing of arming to one or many print master tracks.",
+    "features": [
+      "PEC/Direct switching and arming",
+      "Route arming to one or many print masters",
+      "iPad interface over the local network",
+      "As many computers or iPads as you need",
+      "Finds Pro Tools automatically"
+    ],
+    "version": "1.61",
+    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Paddle_v1.61.pkg",
+    "download_label": "Download",
+    "support": "https://lewsapps.com/paddle-support.html"
+  },
+  {
+    "id": "conduit",
+    "name": "Conduit",
+    "kind": "Pro Tools plug-in",
+    "color": "#9b6dff",
+    "tagline": "Send and return insert for Pro Tools",
+    "summary": "Route named audio outputs to external apps without aux I/Os, and return audio from external apps with as many channels as you need.",
+    "features": [
+      "Conduit Send and Conduit Return inserts",
+      "Appears as an input/output to Core Audio apps",
+      "No aux I/Os required",
+      "Any channel count"
+    ],
+    "version": "1.0.23",
+    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Conduit-1.0.23-Installer.pkg",
+    "download_label": "Download",
+    "support": "https://lewsapps.com/conduit-support.html"
+  },
+  {
+    "id": "silencer",
+    "name": "Silencer",
+    "kind": "Pro Tools plug-in",
+    "color": "#e0675e",
+    "tagline": "Mute or dim, by key or MIDI",
+    "summary": "Mute or dim a track from a keystroke or MIDI command, with latch or momentary modes and toggle and reverse combinations.",
+    "features": [
+      "Mute or dim",
+      "Keystroke or MIDI trigger",
+      "Latch or momentary",
+      "Toggle and reverse combinations"
+    ],
+    "version": "1.0.4",
+    "download": "https://github.com/diskeditor/lews-apps/releases/download/1.0.0/Silencer-1.0.4-Installer.pkg",
+    "download_label": "Download",
+    "support": "https://lewsapps.com/silencer-support.html"
+  },
+  {
+    "id": "transmitter-network",
+    "name": "Transmitter Network",
+    "kind": "Pro Tools plug-ins + app",
+    "color": "#9b6dff",
+    "tagline": "Audio between computers over your LAN",
+    "summary": "Send audio between computers over a local network with low latency. Includes a Receiver app for systems without Pro Tools.",
+    "features": [
+      "Network Send and Receiver plug-ins",
+      "Receiver app for computers without Pro Tools",
+      "Low latency on a local network",
+      "Simple setup"
+    ],
+    "version": "0.3.2",
+    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Transmitter%20Network%20Plug-ins%200.3.2.pkg",
+    "download_label": "Download plug-ins",
+    "support": "https://lewsapps.com/transmitter-support.html"
+  },
+  {
+    "id": "channel",
+    "name": "Channel",
+    "kind": "Pro Tools plug-in",
+    "color": "#9b6dff",
+    "tagline": "The whole channel strip in one insert",
+    "summary": "A complete processing chain for Pro Tools in a single insert: EQ, compressor and de-esser, tuned for dialogue and post.",
+    "features": [
+      "EQ",
+      "Compressor",
+      "De-esser",
+      "Tuned for dialogue and post"
+    ],
+    "version": "1.8.2",
+    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Channel-1.8.2-Installer.pkg",
+    "download_label": "Download",
+    "support": "https://lewsapps.com/channel-support.html"
+  },
+  {
+    "id": "gauge",
+    "name": "Gauge",
+    "kind": "Pro Tools plug-in",
+    "color": "#f0d75a",
+    "tagline": "Loudness meter",
+    "summary": "Integrated loudness, true peak and short-term levels, right on the track.",
+    "features": [
+      "Integrated loudness (LKFS)",
+      "True peak",
+      "Short-term loudness"
+    ],
+    "version": "1.0.9",
+    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Gauge-1.0.9-Installer.pkg",
+    "download_label": "Download",
+    "support": "https://lewsapps.com/gauge-support.html"
+  }
+]
