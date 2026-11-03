@@ -163,3 +163,4 @@ img.icon.pic { background: none !important; border: 0; padding: 0; object-fit: c
 .app .actions { flex-direction: column; gap: 6px; padding-top: 2px; align-items: stretch; }
 .app .actions .btn.sm { height: 32px; padding: 0 8px; font-size: 12px; justify-content: center; }
 .app .actions .btn.sm { white-space: nowrap; }
+.app .kind { color: #fff; }
