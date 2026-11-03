@@ -165,7 +165,7 @@ img.icon.pic { background: none !important; border: 0; padding: 0; object-fit: c
 .app .actions .btn.sm { white-space: nowrap; }
 .app .kind { color: #fff; }
 /* screenshots */
-.app .thumb { display: grid; place-items: center; height: 96px; border-radius: 10px; background: #0c0d0f; box-shadow: inset 0 2px 5px rgba(0,0,0,.7), inset 0 -1px 0 rgba(255,255,255,.05); overflow: hidden; padding: 6px; }
+.app .thumb { display: grid; place-items: center; height: 48px; width: 72%; margin: 0 auto; border-radius: 7px; background: #0c0d0f; box-shadow: inset 0 2px 5px rgba(0,0,0,.7), inset 0 -1px 0 rgba(255,255,255,.05); overflow: hidden; padding: 4px; }
 .app .thumb img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px; display: block; }
 .app .thumb:hover { outline: 1px solid var(--c); }
 figure.shot { margin: 28px 0 0; padding: 24px; display: flex; justify-content: center; }
