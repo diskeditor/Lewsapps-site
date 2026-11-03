@@ -21,7 +21,7 @@
     "id": "paddle",
     "name": "Paddle",
     "kind": "Mac app",
-    "color": "#5b9bff",
+    "color": "#9b6dff",
     "tagline": "PEC/Direct controller for Pro Tools",
     "summary": "Arming and input/output switching for Pro Tools, with routing of arming to one or many print master tracks.",
     "features": [
