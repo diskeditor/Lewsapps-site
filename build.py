@@ -89,13 +89,7 @@ def build_index():
   <div class="eyebrow">Tools for post production</div>
 </section>
 
-<div class="card feature-card">
-  <div class="txt">
-    <h2><img class="tx-logo" src="assets/transmitter-logo.webp" alt="Transmitter" width="1376" height="281"></h2>
-    <p>Stream up to 16 channels of audio plus picture with timecode between Pro Tools rooms, wherever they are.</p>
-  </div>
-  <a class="btn" href="https://transmitter.info">Visit transmitter.info</a>
-</div>
+<div class="tx-visit"><a class="btn" href="https://transmitter.info">Visit transmitter.info</a></div>
 
 <section id="apps">
   <div class="toolbar"><div class="pill" role="tablist">

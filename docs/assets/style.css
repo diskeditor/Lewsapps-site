@@ -92,6 +92,7 @@ nav.top a:hover { color: var(--text); background: var(--raised); text-decoration
 .feature-card .txt { flex: 1 1 360px; }
 .feature-card h2 { margin: 6px 0 8px; font-size: 28px; letter-spacing: -.02em; }
 .feature-card p { margin: 0; color: var(--subtle); font-size: 15px; }
+.tx-visit { display: flex; justify-content: center; margin: 0 0 40px; }
 
 /* sections */
 section.block { padding: 64px 0 8px; }
