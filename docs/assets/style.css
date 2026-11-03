@@ -191,3 +191,4 @@ figure.shot img { max-width: min(calc(100vw - 80px), 720px); max-height: 380px; 
 figure.shot { margin-top: 18px; padding: 10px; }
 figure.shot img { max-width: min(calc(100vw - 60px), 520px); max-height: 280px; border-radius: 8px; }
 .others { max-width: 940px; margin: 0 auto; padding-top: 36px; }
+.detail { grid-template-columns: 1fr 1fr; align-items: stretch; }
