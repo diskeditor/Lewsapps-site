@@ -83,10 +83,19 @@ def app_card(a):
   <p>{e(a['summary'])}</p>
   <div class="req">{REQ}</div>
   <div class="actions">
-    <a class="btn primary sm" href="{e(a['download'])}">{e(a['download_label'])} <span class="ver">v{e(a['version'])}</span></a>
+    {download_buttons(a, 'btn primary sm')}
     <a class="btn sm" href="apps/{a['id']}.html">More info</a>
   </div>
 </article>"""
+
+
+def download_buttons(a, cls):
+    """One Download button, or one per installer when an app has several ("downloads": [{"label", "url"}, …],
+    e.g. Transmitter Network's plug-ins and its Receiver app)."""
+    items = a.get("downloads") or [{"label": a["download_label"], "url": a["download"]}]
+    return "\n    ".join(
+        f'<a class="{cls}" href="{e(d["url"])}">{e(d["label"])} <span class="ver">v{e(a["version"])}</span></a>'
+        for d in items)
 
 
 def build_index():
@@ -155,7 +164,7 @@ def build_app(a):
     <div class="head">{icon(a, 'icon lg', '../')}<div><div class="kind">{e(a['kind'])}</div><h1>{e(a['name'])}</h1><p class="tag">{e(a['tagline'])}</p></div></div>
     <p class="summary">{e(a['summary'])}</p>
     <div class="actions">
-      <a class="btn primary" href="{e(a['download'])}">{e(a['download_label'])} <span class="ver">v{e(a['version'])}</span></a>
+      {download_buttons(a, 'btn primary')}
       <a class="btn" href="{e(a['support'])}">Support</a>
     </div>
   </div>
