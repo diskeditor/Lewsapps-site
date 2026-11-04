@@ -85,7 +85,7 @@
       "Low latency on a local network",
       "Simple setup"
     ],
-    "version": "0.3.2",
+    "version": "0.3.4",
     "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Transmitter-Network-Plug-ins-Installer.pkg",
     "download_label": "Download",
     "support": "https://lewsapps.com/transmitter-support.html",
