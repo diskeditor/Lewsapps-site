@@ -210,3 +210,10 @@ figure.shot img { max-width: min(calc(100vw - 60px), 520px); max-height: 280px; 
 .detail .meta { font-size: 13px; gap: 4px 14px; }
 .detail .side { grid-template-columns: 1.35fr 1fr; }
 figure.shot.wide img { max-width: min(calc(100vw - 60px), 1150px); max-height: 420px; }
+
+/* Parabolic logo */
+.brand small.from-p { display: inline-flex; align-items: center; gap: 7px; }
+img.parabolic { height: auto; width: 96px; display: block; }
+.brand img.parabolic { width: 92px; height: auto; }
+footer.site .foot-p { display: inline-flex; align-items: center; gap: 12px; }
+footer.site .foot-p img.parabolic { width: 104px; }

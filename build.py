@@ -53,7 +53,7 @@ def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post pr
 </head>
 <body>
 <header class="site"><div class="wrap">
-  <a class="brand" href="{up}index.html"><img src="{up}assets/logo.webp" alt="Lew's Apps" height="34"> <small>from Parabolic</small></a>
+  <a class="brand" href="{up}index.html"><img src="{up}assets/logo.webp" alt="Lew's Apps" height="34"> <small class="from-p">from <img class="parabolic" src="{up}assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"></small></a>
   <nav class="top">
     <a href="{up}index.html#apps">Apps</a>
     <a href="{up}index.html#support">Support</a>
@@ -62,7 +62,7 @@ def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post pr
 </div></header>
 {body}
 <footer class="site"><div class="wrap">
-  <span>© {YEAR} Parabolic · New York</span>
+  <span class="foot-p"><img class="parabolic" src="{up}assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"> © {YEAR} Parabolic · New York</span>
   <nav><a href="{up}index.html#support">Support</a><a href="{up}index.html#privacy">Privacy</a><a href="mailto:{CONTACT}">Contact</a></nav>
 </div></footer>
 </body>
