@@ -50,7 +50,7 @@
       "Any channel count"
     ],
     "version": "1.0.23",
-    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Conduit-1.0.23-Installer.pkg",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Conduit-Installer.pkg",
     "download_label": "Download",
     "support": "https://lewsapps.com/conduit-support.html"
   },
