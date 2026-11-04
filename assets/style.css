@@ -218,3 +218,4 @@ img.parabolic { height: auto; width: 96px; display: block; }
 footer.site .foot-p { display: inline-flex; align-items: center; gap: 12px; }
 footer.site .foot-p img.parabolic { width: 104px; }
 .grid { grid-template-columns: repeat(auto-fit, 150px); justify-content: center; }
+.btn .ver { display: none; }
