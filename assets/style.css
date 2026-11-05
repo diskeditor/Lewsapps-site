@@ -219,3 +219,32 @@ footer.site .foot-p { display: inline-flex; align-items: center; gap: 12px; }
 footer.site .foot-p img.parabolic { width: 104px; }
 .grid { grid-template-columns: repeat(auto-fit, 150px); justify-content: center; }
 .btn .ver { display: none; }
+
+/* support pages */
+.support-wrap { max-width: 860px; }
+.support-head { margin: 16px 0 24px; }
+.sh-title { display: flex; align-items: center; gap: 14px; }
+.sh-title .icon { width: 52px; height: 52px; border-radius: 12px; }
+.sh-title h1 { margin: 0; font-size: 28px; letter-spacing: -.02em; }
+.sh-title p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+.support-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.support-nav a { font-size: 13px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background-color: var(--raised); color: var(--text); }
+.support-nav a:hover { text-decoration: none; border-color: var(--purple-o); }
+.support { font-size: 15px; line-height: 1.6; }
+.support section { margin: 0 0 34px; scroll-margin-top: 20px; }
+.support h2 { font-size: 21px; margin: 0 0 10px; }
+.support h3 { font-size: 16px; margin: 20px 0 6px; }
+.support p { margin: 0 0 12px; color: var(--subtle); }
+.support strong { color: var(--text); }
+.support ol, .support ul { margin: 0 0 12px; padding-left: 22px; color: var(--subtle); }
+.support li { margin-bottom: 6px; }
+.support .card { padding: 16px 20px; }
+.support .contact { border-color: var(--purple-o); }
+.support details { background-color: var(--raised); border: 1px solid var(--line); border-radius: 12px; padding: 0 16px; margin-bottom: 10px; }
+.support summary { cursor: pointer; padding: 12px 0; font-weight: 600; list-style: none; color: var(--text); }
+.support summary::-webkit-details-marker { display: none; }
+.support summary::after { content: "+"; float: right; color: var(--purple); font-weight: 700; }
+.support details[open] summary::after { content: "\2212"; }
+.support details > div { padding: 0 0 10px; }
+.support code { background: #0e0f12; border: 1px solid var(--line); padding: 1px 6px; border-radius: 6px; font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--text); }
+.support .btn { margin-top: 4px; }

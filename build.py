@@ -77,6 +77,7 @@ def shot(a, up=""):
 def app_card(a):
     sh = shot(a)
     thumb = f'<a class="thumb" href="apps/{a["id"]}.html"><img src="{sh}" alt="{e(a["name"])} screenshot" loading="lazy"></a>' if sh else ""
+    support_btn = f'\n    <a class="btn sm" href="{a["support"][3:]}">Support</a>' if a["support"].startswith("../") else ""
     return f"""<article class="card app" style="--c:{a['color']}" data-kind="{'plugin' if 'plug-in' in a['kind'].lower() else 'app'}">
   <div class="head">{icon(a)}<div><div class="kind">{e(a['kind'])}</div><h3>{e(a['name'])}</h3></div></div>
   {thumb}
@@ -84,7 +85,7 @@ def app_card(a):
   <div class="req">{REQ}</div>
   <div class="actions">
     {download_buttons(a, 'btn primary sm')}
-    <a class="btn sm" href="apps/{a['id']}.html">More info</a>
+    <a class="btn sm" href="apps/{a['id']}.html">More info</a>{support_btn}
   </div>
 </article>"""
 
@@ -182,6 +183,15 @@ def build_app(a):
         page(f"{a['name']} — Lew's Apps", body, depth=1, desc=f"{a['name']}: {a['summary']}"))
 
 
+def build_support():
+    """Each support/<id>.html body fragment becomes docs/<id>-support.html."""
+    for f in sorted((ROOT / "support").glob("*.html")):
+        a = next((x for x in APPS if x["id"] == f.stem), None)
+        name = a["name"] if a else f.stem.title()
+        body = '<main class="wrap support-wrap" style="--c:#9b6dff">\n<div class="crumb"><a href="apps/' + f.stem + '.html">← ' + e(name) + '</a></div>\n' + f.read_text().replace("{up}", "") + "\n</main>"
+        (OUT / f"{f.stem}-support.html").write_text(page(f"{name} Support — Lew's Apps", body, desc=f"Support for {name}: setup, troubleshooting and contact."))
+
+
 if __name__ == "__main__":
     (OUT / "apps").mkdir(parents=True, exist_ok=True)
     (OUT / "assets").mkdir(exist_ok=True)
@@ -195,4 +205,5 @@ if __name__ == "__main__":
     build_index()
     for a in APPS:
         build_app(a)
+    build_support()
     print("built", len(APPS), "app pages into", OUT)

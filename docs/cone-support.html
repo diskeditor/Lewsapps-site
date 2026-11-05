@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cone Support — Lew&#x27;s Apps</title>
+<meta name="description" content="Support for Cone: setup, troubleshooting and contact.">
+<meta property="og:title" content="Cone Support — Lew&#x27;s Apps">
+<meta property="og:description" content="Support for Cone: setup, troubleshooting and contact.">
+<meta name="theme-color" content="#14161a">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/logo.webp" alt="Lew's Apps" height="34"> <small class="from-p">from <img class="parabolic" src="assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"></small></a>
+  <nav class="top">
+    <a href="index.html#apps">Apps</a>
+    <a href="index.html#support">Support</a>
+    <a class="hide-sm" href="index.html#privacy">Privacy</a>
+  </nav>
+</div></header>
+<main class="wrap support-wrap" style="--c:#9b6dff">
+<div class="crumb"><a href="apps/cone.html">← Cone</a></div>
+<div class="support-head">
+  <div class="sh-title"><img class="icon pic" src="assets/icons/cone.png" alt=""><div><h1>Cone Support</h1><p>Multi-speaker monitoring for Mac</p></div></div>
+  <nav class="support-nav"><a href="#start">Getting started</a>
+      <a href="#remote">iPad remote</a>
+      <a href="#license">Activation</a>
+      <a href="#trouble">Troubleshooting</a>
+      <a href="#faq">FAQ</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a></nav>
+</div>
+<div class="support"><section>
+    <p><strong>Cone</strong> is a Mac app for monitoring audio over multiple speakers. It takes audio from an input (for example your playback app or a loopback device) and sends it to the speakers on your audio interface, with a master level in dB SPL, Dim, Mute all, speaker sets A and B, per-speaker trim and delay, and a 24-band parametric or 31-band graphic EQ with a live spectrum. It supports 2.0, LCR, 5.1, 7.1 and 7.1.4 layouts, and can be controlled from an iPad with the free <strong>Cone Remote</strong> app.</p>
+    <div class="card">
+      <strong>What you need</strong>
+      <ul style="margin-top:8px">
+        <li>A Mac running macOS 12 Monterey or later.</li>
+        <li>An audio interface (or other output device) with enough outputs for your speakers.</li>
+        <li>An audio source: an input device, or Cone Virtual Audio (installed with Cone) to capture the sound of another app.</li>
+      </ul>
+      <p style="margin:0;color:var(--muted);font-size:14px">Your Cone version is shown at the bottom right of the Cone window. Please keep Cone up to date.</p>
+    </div>
+  </section>
+
+  <section id="start">
+    <h2>Getting started</h2>
+    <ol>
+      <li>Install Cone with the installer. It installs <strong>Cone</strong> in Applications and <strong>Cone Virtual Audio</strong>, Cone's own loopback audio device.</li>
+      <li>Open Cone. When macOS asks to allow audio input (microphone access), click <strong>Allow</strong>. Cone only uses it to read the audio from the input you choose, never to record you.</li>
+      <li>Choose your speakers' output device: open <strong>Settings</strong> (<code>Cmd ,</code>) and pick it under <em>Output device</em>. Use <em>Refresh devices</em> if it is not listed.</li>
+      <li>Open the <strong>Setup</strong> page. Set the format of each speaker set (for example 5.1) and each source, and choose which device and channels each source uses. Changes save automatically.</li>
+      <li>Go to the <strong>Mixer</strong>, turn the source on, and set the level with the master knob.</li>
+    </ol>
+    <p>To play another app through Cone, set that app's (or the Mac's) sound output to <strong>Cone Virtual Audio</strong>, and choose Cone Virtual Audio as the source's device on the Setup page.</p>
+    <p>Setup presets store formats, sources, routing, trims and polarity, so you can switch between rooms or projects quickly.</p>
+
+    <h3>Tuning a speaker</h3>
+    <p>Open <strong>Tune</strong> for a speaker to set its gain, delay and EQ while watching its live spectrum. You can switch a speaker between the parametric EQ and the graphic EQ; only the one you choose is heard, and the other keeps its settings. Cone can play a test signal through the selected speaker. Turn it off when you finish.</p>
+  </section>
+
+  <section id="remote">
+    <h2>iPad remote</h2>
+    <ol>
+      <li>In Cone, open <strong>Setup</strong>, click the <strong>iPad remote</strong> button and turn on <strong>Allow the iPad remote</strong>.</li>
+      <li>On the iPad, open the <strong>Cone Remote</strong> app. Your Mac appears in the list. Tap it.</li>
+    </ol>
+    <p>No app? On the iPad, open the Wi-Fi address shown in the iPad remote popover in Safari (for example <code>http://192.168.1.20:8080</code>). Tap Share, then <strong>Add to Home Screen</strong> to open it full screen.</p>
+    <p>The iPad and the Mac must be on the same network. Anyone on that network who opens the address can change the master level, Dim and Mute all, so use a network you trust.</p>
+    <p>Opening the remote's Tune page asks for a short number code to prevent accidents. The default is <code>1234</code>. Change or turn it off in the iPad remote popover under <strong>Ask for a code to open Tune</strong>. It is not a security feature.</p>
+    <p>See the <strong>Cone Remote</strong> support page for iPad troubleshooting.</p>
+  </section>
+
+  <section id="license">
+    <h2>Activation</h2>
+    <p>Cone starts with a short trial. To activate it, open the <strong>Activate Cone</strong> window, copy your Mac's ID, and send it to <a href="mailto:lew@parabolicny.com?subject=Cone%20license">lew@parabolicny.com</a>. You will get a license back that works on that Mac only. If a license expires, email us to renew it.</p>
+  </section>
+
+  <section id="trouble">
+    <h2>Troubleshooting</h2>
+
+    <details>
+      <summary>I hear nothing</summary>
+      <div>
+        <ul>
+          <li>On the Mixer, check that the source is on, <strong>Mute all</strong> and <strong>Dim</strong> are off, the speaker set is active, and the level is up.</li>
+          <li>In Settings, check that the right <em>Output device</em> is chosen and that it has enough outputs for your format.</li>
+          <li>On the Setup page, check the source's device and channels. A red or yellow message there means there are not enough input channels or channels overlap another source.</li>
+          <li>If the source plays another app, check that the app's sound output is set to <strong>Cone Virtual Audio</strong>.</li>
+          <li>Make sure a Tune test signal is not left running on a speaker.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Cone has no audio input, or macOS did not ask for permission</summary>
+      <div>
+        <p>Open <strong>System Settings &gt; Privacy &amp; Security &gt; Microphone</strong> and switch on <strong>Cone</strong>. Then quit and reopen Cone.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>My audio interface is not in the list</summary>
+      <div>
+        <p>Check that it is connected and shown in <strong>Audio MIDI Setup</strong>, then click <strong>Refresh devices</strong> in Cone's Settings. If it still does not appear, quit and reopen Cone.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Cracks, dropouts, or the Status line shows underruns</summary>
+      <div>
+        <ul>
+          <li>Settings shows a Status line with buffered time, drift corrections, underruns and overruns while audio is running. Occasional drift corrections are normal.</li>
+          <li>Close other heavy apps, and avoid USB hubs for your audio interface.</li>
+          <li>If the input and output devices run from different clocks, small drift corrections keep them in sync automatically.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>The iPad cannot find my Mac</summary>
+      <div>
+        <ul>
+          <li>Make sure <strong>Allow the iPad remote</strong> is on (Setup &gt; iPad remote).</li>
+          <li>Make sure the iPad and Mac are on the same Wi-Fi or Ethernet network, not a guest network, and with VPNs off.</li>
+          <li>If the Mac's firewall is on, allow incoming connections for Cone (<strong>System Settings &gt; Network &gt; Firewall</strong>).</li>
+          <li>Check that macOS allowed Cone to find devices on your local network (<strong>System Settings &gt; Privacy &amp; Security &gt; Local Network</strong>).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>Cone says the license is missing or expired</summary>
+      <div>
+        <p>Open the <strong>Activate Cone</strong> window and email your Mac's ID to <a href="mailto:lew@parabolicny.com?subject=Cone%20license">lew@parabolicny.com</a>. Licenses work on one Mac only, so a new Mac needs a new license.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>My Mac's system audio sounds wrong after installing Cone</summary>
+      <div>
+        <p>Open <strong>System Settings &gt; Sound</strong> and check that your normal speakers are chosen as the output. If something still sounds wrong, email us. We can send a one-step uninstall for Cone Virtual Audio that removes it and restarts the Mac's audio system.</p>
+      </div>
+    </details>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+
+    <details>
+      <summary>Does Cone change the sound?</summary>
+      <div><p>Only the settings you choose: level, trim, delay, EQ and routing. The Tune page can flatten an EQ at any time, and each speaker's EQ can be bypassed.</p></div>
+    </details>
+
+    <details>
+      <summary>What does dB SPL on the master knob mean?</summary>
+      <div><p>The master level is shown in dB SPL relative to a reference level of 85 dB SPL, which plays at unity gain. The range is 60 to 90. It describes how loud the system is set, as a reference for your monitoring, not a measurement of your room.</p></div>
+    </details>
+
+    <details>
+      <summary>Can I use two sets of speakers?</summary>
+      <div><p>Yes. Cone has speaker sets A and B, each with its own format and trim. Choose A, B or A + B on the Mixer.</p></div>
+    </details>
+
+    <details>
+      <summary>Which formats are supported?</summary>
+      <div><p>2.0, LCR, 5.1, 7.1 and 7.1.4, for both the speaker sets and the sources.</p></div>
+    </details>
+
+    <details>
+      <summary>Can more than one iPad control the same Mac?</summary>
+      <div><p>Yes. Each iPad connects over the network on its own.</p></div>
+    </details>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy</h2>
+    <p>Cone does not collect, store or share personal information. It has no accounts, no analytics and no advertising. Audio is read from the input you choose and sent to your own output device on your Mac; it is not recorded or uploaded. The iPad remote talks only to your Mac over your local network.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact support</h2>
+    <div class="card contact">
+      <p>Cannot solve it above? Email us and we will help.</p>
+      <p style="margin-bottom:12px;color:var(--muted);font-size:14px">Please include your Mac model and macOS version, the Cone version (shown at the bottom right of the Cone window), your audio interface, and a short description of what happens.</p>
+      <a class="btn" href="mailto:lew@parabolicny.com?subject=Cone%20Support">lew@parabolicny.com</a>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="site"><div class="wrap">
+  <span class="foot-p"><img class="parabolic" src="assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"> © 2026 Parabolic · New York</span>
+  <nav><a href="index.html#support">Support</a><a href="index.html#privacy">Privacy</a><a href="mailto:lew@parabolicny.com">Contact</a></nav>
+</div></footer>
+</body>
+</html>
