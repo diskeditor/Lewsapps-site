@@ -134,5 +134,22 @@
     "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Gauge-1.0.9-Installer.pkg",
     "download_label": "Download",
     "support": "https://lewsapps.com/gauge-support.html"
+  },
+  {
+    "id": "orbiter",
+    "name": "Orbiter",
+    "kind": "Pro Tools plug-in",
+    "color": "#9b6dff",
+    "tagline": "Spatial orbs",
+    "summary": "Place your tracks as orbs in a multichannel space, drag them around, or let them drift with Doppler pitch and level.",
+    "features": [
+      "Multiple tracks routed into one multichannel track (e.g. 7.1.2)",
+      "Drag sources around the room as orbs",
+      "Random motion with Doppler pitch and amplitude"
+    ],
+    "version": "1.0",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Orbiter-Installer.pkg",
+    "download_label": "Download",
+    "support": "mailto:lew@parabolicny.com?subject=Orbiter%20Support"
   }
 ]
