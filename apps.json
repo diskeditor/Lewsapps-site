@@ -73,34 +73,6 @@
     "support": "https://lewsapps.com/silencer-support.html"
   },
   {
-    "id": "transmitter-network",
-    "name": "Transmitter Network",
-    "kind": "Pro Tools plug-ins + app",
-    "color": "#9b6dff",
-    "tagline": "Audio between computers over your LAN",
-    "summary": "Send audio between computers over a local network with low latency. Includes a Receiver app for systems without Pro Tools.",
-    "features": [
-      "Network Send and Receiver plug-ins",
-      "Receiver app for computers without Pro Tools",
-      "Low latency on a local network",
-      "Simple setup"
-    ],
-    "version": "0.3.4",
-    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Transmitter-Network-Plug-ins-Installer.pkg",
-    "download_label": "Download",
-    "support": "https://lewsapps.com/transmitter-support.html",
-    "downloads": [
-      {
-        "label": "Plug-ins",
-        "url": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Transmitter-Network-Plug-ins-Installer.pkg"
-      },
-      {
-        "label": "Receiver app",
-        "url": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Transmitter-Network-Receiver-Installer.pkg"
-      }
-    ]
-  },
-  {
     "id": "channel",
     "name": "Channel",
     "kind": "Pro Tools plug-in",
@@ -136,20 +108,20 @@
     "support": "https://lewsapps.com/gauge-support.html"
   },
   {
-    "id": "orbiter",
-    "name": "Orbiter",
-    "kind": "Pro Tools plug-in",
+    "id": "shuttle",
+    "name": "Shuttle",
+    "kind": "Mac app",
     "color": "#9b6dff",
-    "tagline": "Spatial orbs",
-    "summary": "Place your tracks as orbs in a multichannel space, drag them around, or let them drift with Doppler pitch and level.",
+    "tagline": "Avid Media Composer remote",
+    "summary": "Control Avid Media Composer's transport remotely from an iPad or a web page.",
     "features": [
-      "Multiple tracks routed into one multichannel track (e.g. 7.1.2)",
-      "Drag sources around the room as orbs",
-      "Random motion with Doppler pitch and amplitude"
+      "Remote transport control for Avid Media Composer",
+      "Controls on an iPad or any web browser",
+      "No extra hardware needed"
     ],
     "version": "1.0",
-    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Orbiter-Installer.pkg",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Shuttle-Installer.pkg",
     "download_label": "Download",
-    "support": "mailto:lew@parabolicny.com?subject=Orbiter%20Support"
+    "support": "mailto:lew@parabolicny.com?subject=Shuttle%20Support"
   }
 ]
