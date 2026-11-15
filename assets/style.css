@@ -248,3 +248,7 @@ footer.site .foot-p img.parabolic { width: 104px; }
 .support details > div { padding: 0 0 10px; }
 .support code { background: #0e0f12; border: 1px solid var(--line); padding: 1px 6px; border-radius: 6px; font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; color: var(--text); }
 .support .btn { margin-top: 4px; }
+/* tighter top of page */
+.hero { padding: 22px 0 14px; }
+.tx-visit { margin: 0 0 16px; }
+.toolbar { margin: 0 0 14px; }
