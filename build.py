@@ -35,7 +35,7 @@ def icon(app, cls="icon", up=""):
     return f'<div class="{cls}" style="--c:{app["color"]}" aria-hidden="true">{GLYPHS.get(app["id"], e(app["name"][0]))}</div>'
 
 
-def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post production, from Parabolic.", pre=""):
+def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post production, from Parabolic.", mid=""):
     up = "../" * depth
     return f"""<!doctype html>
 <html lang="en">
@@ -52,8 +52,9 @@ def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post pr
 <link rel="apple-touch-icon" href="{up}assets/icon-180.png">
 </head>
 <body>
-{pre}<header class="site"><div class="wrap">
+<header class="site"><div class="wrap">
   <a class="brand" href="{up}index.html"><img src="{up}assets/logo.webp" alt="Lew's Apps" height="34"> <small class="from-p">from <img class="parabolic" src="{up}assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"></small></a>
+  {mid}
   <nav class="top">
     <a href="{up}index.html#apps">Apps</a>
     <a href="{up}index.html#support">Support</a>
@@ -136,7 +137,7 @@ document.querySelectorAll('.pill button').forEach(b => b.addEventListener('click
   document.querySelectorAll('.app').forEach(c => c.style.display = (f === 'all' || c.dataset.kind === f) ? '' : 'none');
 }}));
 </script>"""
-    (OUT / "index.html").write_text(page("Lew's Apps — Pro Tools plug-ins and Mac apps from Parabolic", body, pre='<div class="top-title"><div class="eyebrow">Tools for post production</div></div>\n'))
+    (OUT / "index.html").write_text(page("Lew's Apps — Pro Tools plug-ins and Mac apps from Parabolic", body, mid='<div class="bar-title">Tools for post production</div>'))
 
 
 def build_app(a):

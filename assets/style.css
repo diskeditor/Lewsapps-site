@@ -258,3 +258,7 @@ footer.site .foot-p img.parabolic { width: 104px; }
 .top-title + header.site { border-top: 1px solid var(--line); }
 .top-title ~ main .tx-visit { margin-top: 18px; }
 #apps .toolbar { margin-top: 18px; }
+/* title in the middle of the logo bar */
+header.site .wrap { position: relative; }
+.bar-title { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); white-space: nowrap; font-size: clamp(14px, 1.7vw, 22px); font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--subtle); pointer-events: none; }
+@media (max-width: 1000px) { .bar-title { display: none; } }
