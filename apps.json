@@ -108,6 +108,23 @@
     "support": "https://lewsapps.com/gauge-support.html"
   },
   {
+    "id": "ferry",
+    "name": "Ferry",
+    "kind": "Mac app",
+    "color": "#9b6dff",
+    "tagline": "Backup and synchronization",
+    "summary": "Back up and synchronize your files to local and external drives, network shares or another Mac on your network.",
+    "features": [
+      "One-way backup, mirror and versioned archive",
+      "Local and external drives, network shares (SMB/AFP) or another Mac over your network",
+      "Pro version, plus a simple one-button version"
+    ],
+    "version": "1.0",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Ferry-Installer.pkg",
+    "download_label": "Download",
+    "support": "mailto:lew@parabolicny.com?subject=Ferry%20Support"
+  },
+  {
     "id": "shuttle",
     "name": "Shuttle",
     "kind": "Mac app",
