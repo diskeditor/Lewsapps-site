@@ -35,7 +35,7 @@ def icon(app, cls="icon", up=""):
     return f'<div class="{cls}" style="--c:{app["color"]}" aria-hidden="true">{GLYPHS.get(app["id"], e(app["name"][0]))}</div>'
 
 
-def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post production, from Parabolic."):
+def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post production, from Parabolic.", pre=""):
     up = "../" * depth
     return f"""<!doctype html>
 <html lang="en">
@@ -52,7 +52,7 @@ def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post pr
 <link rel="apple-touch-icon" href="{up}assets/icon-180.png">
 </head>
 <body>
-<header class="site"><div class="wrap">
+{pre}<header class="site"><div class="wrap">
   <a class="brand" href="{up}index.html"><img src="{up}assets/logo.webp" alt="Lew's Apps" height="34"> <small class="from-p">from <img class="parabolic" src="{up}assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"></small></a>
   <nav class="top">
     <a href="{up}index.html#apps">Apps</a>
@@ -102,10 +102,6 @@ def download_buttons(a, cls):
 def build_index():
     cards = "\n".join(app_card(a) for a in APPS)
     body = f"""<main class="wrap">
-<section class="hero">
-  <div class="eyebrow">Tools for post production</div>
-</section>
-
 <div class="tx-visit"><a class="btn" href="https://transmitter.info">Visit transmitter.info</a></div>
 
 <section id="apps">
@@ -142,7 +138,7 @@ document.querySelectorAll('.pill button').forEach(b => b.addEventListener('click
   document.querySelectorAll('.app').forEach(c => c.style.display = (f === 'all' || c.dataset.kind === f) ? '' : 'none');
 }}));
 </script>"""
-    (OUT / "index.html").write_text(page("Lew's Apps — Pro Tools plug-ins and Mac apps from Parabolic", body))
+    (OUT / "index.html").write_text(page("Lew's Apps — Pro Tools plug-ins and Mac apps from Parabolic", body, pre='<div class="top-title"><div class="eyebrow">Tools for post production</div></div>\n'))
 
 
 def build_app(a):

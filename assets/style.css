@@ -252,3 +252,8 @@ footer.site .foot-p img.parabolic { width: 104px; }
 .hero { padding: 22px 0 14px; }
 .tx-visit { margin: 0 0 16px; }
 .toolbar { margin: 0 0 14px; }
+/* title above the header bar on the home page */
+.top-title { text-align: center; padding: 20px 24px 14px; }
+.top-title .eyebrow { margin: 0; font-size: clamp(18px, 2.6vw, 28px); letter-spacing: .16em; color: var(--subtle); }
+.top-title + header.site { border-top: 1px solid var(--line); }
+.top-title ~ main .tx-visit { margin-top: 18px; }
