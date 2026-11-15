@@ -56,7 +56,6 @@ def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post pr
   <a class="brand" href="{up}index.html"><img src="{up}assets/logo.webp" alt="Lew's Apps" height="34"> <small class="from-p">from <img class="parabolic" src="{up}assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"></small></a>
   {mid}
   <nav class="top">
-    <a href="{up}index.html#apps">Apps</a>
     <a href="{up}index.html#support">Support</a>
     <a class="hide-sm" href="{up}index.html#privacy">Privacy</a>
   </nav>
