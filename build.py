@@ -104,9 +104,6 @@ def build_index():
     cards = "\n".join(app_card(a) for a in APPS)
     body = f"""<main class="wrap">
 <section id="apps">
-  <div class="toolbar"><div class="pill" role="tablist">
-    <button class="on" data-f="all">All</button><button data-f="plugin">Pro Tools plug-ins</button><button data-f="app">Mac apps</button>
-  </div></div>
   <div class="grid">
 {cards}
   </div>
