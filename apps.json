@@ -13,7 +13,7 @@
       "Multiple iPads can connect to one Mac"
     ],
     "version": "3.6.68",
-    "download": "https://github.com/diskeditor/lews-apps/raw/refs/heads/main/Cone-Installer-3.6.68.pkg",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Cone-Installer.pkg",
     "download_label": "Download",
     "support": "../cone-support.html"
   },
