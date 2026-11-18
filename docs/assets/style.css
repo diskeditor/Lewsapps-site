@@ -263,3 +263,4 @@ header.site .wrap { position: relative; }
 .bar-title { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); white-space: nowrap; font-size: clamp(14px, 1.7vw, 22px); font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--subtle); pointer-events: none; }
 @media (max-width: 1000px) { .bar-title { display: none; } }
 #apps .grid { margin-top: 22px; }
+.wrap { max-width: 1480px; } .grid { grid-template-columns: repeat(auto-fit, 144px); gap: 10px; }

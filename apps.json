@@ -108,6 +108,23 @@
     "support": "https://lewsapps.com/gauge-support.html"
   },
   {
+    "id": "aae",
+    "name": "AAE",
+    "kind": "Pro Tools plug-in",
+    "color": "#9b6dff",
+    "tagline": "Audio Anomaly Eradicator",
+    "summary": "Audio Anomaly Eradicator. Samples your takes to find the resonances and sibilance that keep coming back in a voice, then removes them.",
+    "features": [
+      "Samples multiple takes to find the problem frequencies they share",
+      "Targets voice resonance and sibilance",
+      "Built for dialogue and voice-over"
+    ],
+    "version": "1.0",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/AAE-Installer.pkg",
+    "download_label": "Download",
+    "support": "mailto:lew@parabolicny.com?subject=AAE%20Support"
+  },
+  {
     "id": "ferry",
     "name": "Ferry",
     "kind": "Mac app",
