@@ -142,6 +142,23 @@
     "support": "mailto:lew@parabolicny.com?subject=Neural%20Support"
   },
   {
+    "id": "chamber",
+    "name": "Chamber",
+    "kind": "Pro Tools plug-in",
+    "color": "#9b6dff",
+    "tagline": "Multichannel reverb",
+    "summary": "Multichannel reverb from mono to 7.1.4, with algorithmic and convolution engines for dialogue placement and music and effects tails.",
+    "features": [
+      "Algorithmic and convolution reverb, mono to 7.1.4",
+      "Impulse response browser with room pictures, multi-file surround rooms and speaker positions",
+      "Quick preset slots for fast recall"
+    ],
+    "version": "1.0",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Chamber-Installer.pkg",
+    "download_label": "Download",
+    "support": "mailto:lew@parabolicny.com?subject=Chamber%20Support"
+  },
+  {
     "id": "ferry",
     "name": "Ferry",
     "kind": "Mac app",
