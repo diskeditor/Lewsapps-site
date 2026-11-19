@@ -1,0 +1,47 @@
+[
+  {
+    "name": "OpenAIR",
+    "by": "University of York",
+    "url": "https://www.openair.hosted.york.ac.uk",
+    "what": "A large library of real spaces: churches, halls, heritage buildings, outdoor sites and more.",
+    "formats": "Stereo, B-format and 5.1, depending on the room",
+    "licence": "Most rooms are Creative Commons, but the contributor of each room picks its licence. Check the licence shown on each room's page before using it.",
+    "best": "Surround rooms and heritage spaces"
+  },
+  {
+    "name": "MAIR (Microphone Array Impulse Responses)",
+    "by": "Applied Psychoacoustics Lab, University of Huddersfield",
+    "url": "https://zenodo.org/records/2639677",
+    "what": "Rooms captured with many microphone arrays, from 2-channel stereo to 9-channel surround with height.",
+    "formats": "Stereo, surround and height arrays",
+    "licence": "CC-BY 4.0: free to use, with credit to the University of Huddersfield.",
+    "best": "5.1, 7.1 and immersive (height) work"
+  },
+  {
+    "name": "3D-MARCo",
+    "by": "Applied Psychoacoustics Lab, University of Huddersfield",
+    "url": "https://doi.org/10.5281/zenodo.3474285",
+    "what": "Room impulse responses from St. Paul's concert hall, Huddersfield, recorded with 71 microphones in several 3D arrays. A large download (about 24 GB in all).",
+    "formats": "3D microphone arrays and first-order Ambisonics",
+    "licence": "Open access. See the licence on its download page.",
+    "best": "Concert-hall space in 3D"
+  },
+  {
+    "name": "Sonic Palimpsest",
+    "by": "University of Kent (A Sonic Palimpsest project)",
+    "url": "https://research.kent.ac.uk/sonic-palimpsest/impulse-responses/",
+    "what": "Seven historic spaces at Chatham Dockyard, Kent: a working shipyard for 500 years, now a museum often used as a film location.",
+    "formats": "WAV, one folder per space",
+    "licence": "Free to download and use, including in film sound and post. See the project's page for its terms.",
+    "best": "Period drama and industrial spaces"
+  },
+  {
+    "name": "Voxengo IM Reverbs",
+    "by": "Voxengo",
+    "url": "https://www.voxengo.com/impulses/",
+    "what": "A small, handy pack of reverb impulses.",
+    "formats": "Stereo WAV, 44.1 kHz",
+    "licence": "Royalty-free for any use, including commercial. The files may not be sold or redistributed for profit.",
+    "best": "A quick starter set"
+  }
+]

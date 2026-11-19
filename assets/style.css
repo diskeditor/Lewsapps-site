@@ -267,3 +267,18 @@ header.site .wrap { position: relative; }
 .grid .app { padding-left: 9px; padding-right: 9px; } .grid .app > p { font-size: 13px; }
 .grid .app .kind { font-size: 8.5px; letter-spacing: .06em; white-space: nowrap; }
 .grid .app { padding-left: 7px; padding-right: 7px; } .grid .app > p { font-size: 12px; line-height: 1.45; } .grid .app h3 { font-size: 15px; } .grid .app .kind { font-size: 7.5px; letter-spacing: .04em; } .grid .app .req { font-size: 10px; } .grid .app .btn.sm { font-size: 12px; }
+
+/* Free IRs page */
+.free-head { padding: 28px 32px; margin-top: 28px; }
+.free-head .head { display: flex; gap: 20px; align-items: center; }
+.free-head h1 { margin: 4px 0 0; font-size: 38px; letter-spacing: -.02em; line-height: 1.1; }
+.free-head .tag { font-size: 17px; color: var(--subtle); margin: 6px 0 0; }
+.libs .lib { display: flex; flex-direction: column; gap: 10px; }
+.libs .lib h3 { margin: 0; font-size: 19px; }
+.libs .lib .by { font-size: 13px; color: var(--muted); margin-top: -6px; }
+.libs .lib .meta { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; font-size: 13.5px; margin: 4px 0 0; }
+.libs .lib .meta dt { color: var(--muted); }
+.libs .lib .meta dd { margin: 0; color: var(--subtle); }
+.libs .lib .actions { margin-top: auto; padding-top: 8px; }
+.libs .lib .btn.primary { background-color: color-mix(in srgb, var(--c) 45%, #1b1e23); border-color: var(--c); box-shadow: var(--edge), var(--lift), 0 0 14px color-mix(in srgb, var(--c) 40%, transparent); }
+p.fine { font-size: 13px; color: var(--muted); margin: 28px 0 40px; }

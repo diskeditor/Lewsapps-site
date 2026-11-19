@@ -10,6 +10,8 @@ import html, json, os, pathlib
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "docs"
 APPS = json.loads((ROOT / "apps.json").read_text())
+FREE_IRS = json.loads((ROOT / "free-irs.json").read_text())
+FREE_IRS_COLOR = "#5fd1bd"
 REQ = "macOS 13 Ventura or later · Apple silicon or Intel"
 CONTACT = "lew@parabolicny.com"
 YEAR = 2026
@@ -24,6 +26,7 @@ GLYPHS = {
     "channel": f'<svg viewBox="0 0 32 32" {S}><path d="M8 5v22M16 5v22M24 5v22"/><rect x="5" y="17" width="6" height="4" rx="1.2" fill="#111"/><rect x="13" y="9" width="6" height="4" rx="1.2" fill="#111"/><rect x="21" y="14" width="6" height="4" rx="1.2" fill="#111"/></svg>',
     "gauge": f'<svg viewBox="0 0 32 32" {S}><path d="M5 22a11 11 0 0 1 22 0"/><path d="M16 22l6-8"/><circle cx="16" cy="22" r="2" fill="#111"/><path d="M8.5 13.5l1.6 1.4M16 9v2M23.5 13.5l-1.6 1.4"/></svg>',
 }
+GLYPHS["free-irs"] = f'<svg viewBox="0 0 32 32" {S}><path d="M4 16h3l2-9 3 18 3-14 2 8 2-5 2 4 2-2h5"/></svg>'
 TRANSMITTER_GLYPH = f'<svg viewBox="0 0 32 32" {S}><circle cx="16" cy="18" r="3" fill="#111"/><path d="M10 12a8.5 8.5 0 0 0 0 12M22 12a8.5 8.5 0 0 1 0 12M6 8a14 14 0 0 0 0 20M26 8a14 14 0 0 1 0 20"/></svg>'
 
 e = html.escape
@@ -99,8 +102,65 @@ def download_buttons(a, cls):
         for d in items)
 
 
+def free_irs_card():
+    """A card (not an app) pointing to free impulse-response libraries for Chamber, next to Chamber's card."""
+    fake = {"id": "free-irs", "color": FREE_IRS_COLOR, "name": "Free IRs"}
+    return f"""<article class="card app" style="--c:{FREE_IRS_COLOR}" data-kind="plugin">
+  <div class="head">{icon(fake)}<div><div class="kind">Free downloads</div><h3>Free IRs for Chamber</h3></div></div>
+  <p>Free impulse-response libraries of real rooms, halls and historic spaces, in stereo, surround and 3D, to load into Chamber.</p>
+  <div class="req">Links to each publisher's own site</div>
+  <div class="actions">
+    <a class="btn primary sm" href="free-irs.html">See the libraries</a>
+    <a class="btn sm" href="apps/chamber.html">Chamber</a>
+  </div>
+</article>"""
+
+
+def build_free_irs():
+    libs = []
+    for l in FREE_IRS:
+        libs.append(f"""<div class="card lib">
+      <h3>{e(l['name'])}</h3>
+      <div class="by">{e(l['by'])}</div>
+      <p>{e(l['what'])}</p>
+      <dl class="meta"><dt>Formats</dt><dd>{e(l['formats'])}</dd><dt>Good for</dt><dd>{e(l['best'])}</dd><dt>Licence</dt><dd>{e(l['licence'])}</dd></dl>
+      <div class="actions"><a class="btn primary sm" href="{e(l['url'])}" target="_blank" rel="noopener">Go to {e(l['name'].split(' (')[0])} &#8599;</a></div>
+    </div>""")
+    body = f"""<main class="wrap" style="--c:{FREE_IRS_COLOR}">
+<div class="crumb"><a href="index.html#apps">&#8592; All apps</a> &nbsp;&middot;&nbsp; <a href="apps/chamber.html">Chamber</a></div>
+<div class="card main free-head">
+  <div class="head">{icon({"id": "free-irs", "color": FREE_IRS_COLOR, "name": "Free IRs"}, 'icon lg')}<div><div class="kind">Free downloads</div><h1>Free IRs for Chamber</h1>
+  <p class="tag">Real rooms, halls and historic spaces, free to download from the people who recorded them.</p></div></div>
+</div>
+
+<section class="block">
+  <div class="eyebrow">Libraries</div>
+  <div class="cols libs">
+    {''.join(libs)}
+  </div>
+</section>
+
+<section class="block">
+  <div class="eyebrow">Using them in Chamber</div>
+  <div class="cols">
+    <div class="card"><h3>Import</h3><ol>
+      <li>Download a library from its site and unzip it.</li>
+      <li>In Chamber, click Convolution, then Browse... and Import..., and pick the library's folder.</li>
+      <li>Chamber copies it into its IR Library, groups the files into rooms and finds any photos.</li>
+    </ol></div>
+    <div class="card"><h3>Surround and 3D</h3><p>Chamber maps every IR channel to your track's speakers, from mono to 7.1.4. Front, rear and height files of one room become one surround room, and B-format files are decoded to your speakers. If a library names its files its own way, use Build room... to set it up once.</p></div>
+    <div class="card"><h3>Licences</h3><p>Each library's licence is set by its publisher. Some ask for credit (for example "University of Huddersfield, CC-BY 4.0"). Read the terms on its site before using it in your work.</p></div>
+  </div>
+</section>
+
+<p class="fine">These links go to each publisher's own website. Lew's Apps doesn't host, sell or distribute these files and isn't affiliated with these publishers. Library names belong to their owners.</p>
+</main>"""
+    (OUT / "free-irs.html").write_text(page("Free IRs for Chamber — Lew's Apps", body,
+        desc="Free impulse-response libraries of real rooms and spaces, in stereo, surround and 3D, to use with Chamber."))
+
+
 def build_index():
-    cards = "\n".join(app_card(a) for a in APPS)
+    cards = "\n".join(app_card(a) + ("\n" + free_irs_card() if a["id"] == "chamber" else "") for a in APPS)
     body = f"""<main class="wrap">
 <section id="apps">
   <div class="grid">
@@ -157,7 +217,7 @@ def build_app(a):
     <p class="summary">{e(a['summary'])}</p>
     <div class="actions">
       {download_buttons(a, 'btn primary')}
-      <a class="btn" href="{e(a['support'])}">Support</a>
+      <a class="btn" href="{e(a['support'])}">Support</a>{'<a class="btn" href="../free-irs.html">Free IRs</a>' if a['id'] == 'chamber' else ''}
     </div>
   </div>
   <div class="card side">
@@ -197,4 +257,5 @@ if __name__ == "__main__":
     for a in APPS:
         build_app(a)
     build_support()
+    build_free_irs()
     print("built", len(APPS), "app pages into", OUT)
