@@ -125,6 +125,23 @@
     "support": "mailto:lew@parabolicny.com?subject=AAE%20Support"
   },
   {
+    "id": "neural",
+    "name": "Neural",
+    "kind": "Pro Tools plug-in",
+    "color": "#9b6dff",
+    "tagline": "Neural noise reduction",
+    "summary": "Neural-network noise reduction for dialogue. Pull the noise down and keep the voice clean and natural.",
+    "features": [
+      "Neural-network noise reduction engine",
+      "Noise Level control in dB, with a separate Dialogue control",
+      "Built for dialogue, voice-over and ADR"
+    ],
+    "version": "1.0",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Neural-Installer.pkg",
+    "download_label": "Download",
+    "support": "mailto:lew@parabolicny.com?subject=Neural%20Support"
+  },
+  {
     "id": "ferry",
     "name": "Ferry",
     "kind": "Mac app",
