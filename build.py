@@ -136,14 +136,7 @@ def build_free_irs():
 <section class="block">
   <div class="eyebrow">Libraries</div>
   <div class="cols libs">
-    {''.join(libs)}
-  </div>
-</section>
-
-<section class="block">
-  <div class="eyebrow">More IRs</div>
-  <div class="cols libs">
-    <div class="card lib">
+    {''.join(libs)}<div class="card lib">
       <h3>Impulse Record</h3>
       <div class="actions"><a class="btn primary sm" href="https://impulserecord.onfastspring.com" target="_blank" rel="noopener">Go to Impulse Record &#8599;</a></div>
     </div>
