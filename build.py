@@ -104,10 +104,10 @@ def download_buttons(a, cls):
 
 def free_irs_card():
     """A card (not an app) pointing to free impulse-response libraries for Chamber, next to Chamber's card."""
-    fake = {"id": "free-irs", "color": FREE_IRS_COLOR, "name": "Free IRs"}
+    fake = {"id": "free-irs", "color": FREE_IRS_COLOR, "name": "IRs"}
     return f"""<article class="card app" style="--c:{FREE_IRS_COLOR}" data-kind="plugin">
-  <div class="head">{icon(fake)}<div><div class="kind">Free downloads</div><h3>Free IRs for Chamber</h3></div></div>
-  <p>Free impulse-response libraries of real rooms, halls and historic spaces, in stereo, surround and 3D, to load into Chamber.</p>
+  <div class="head">{icon(fake)}<div><div class="kind">For Chamber</div><h3>IRs</h3></div></div>
+  <p>Impulse-response libraries of real rooms, halls and historic spaces, in stereo, surround and 3D, to load into Chamber.</p>
   <div class="req">Links to each publisher's own site</div>
   <div class="actions">
     <a class="btn primary sm" href="free-irs.html">See the libraries</a>
@@ -129,8 +129,8 @@ def build_free_irs():
     body = f"""<main class="wrap" style="--c:{FREE_IRS_COLOR}">
 <div class="crumb"><a href="index.html#apps">&#8592; All apps</a> &nbsp;&middot;&nbsp; <a href="apps/chamber.html">Chamber</a></div>
 <div class="card main free-head">
-  <div class="head">{icon({"id": "free-irs", "color": FREE_IRS_COLOR, "name": "Free IRs"}, 'icon lg')}<div><div class="kind">Free downloads</div><h1>Free IRs for Chamber</h1>
-  <p class="tag">Real rooms, halls and historic spaces, free to download from the people who recorded them.</p></div></div>
+  <div class="head">{icon({"id": "free-irs", "color": FREE_IRS_COLOR, "name": "IRs"}, 'icon lg')}<div><div class="kind">For Chamber</div><h1>IRs</h1>
+  <p class="tag">Real rooms, halls and historic spaces, from the people who recorded them.</p></div></div>
 </div>
 
 <section class="block">
@@ -165,8 +165,8 @@ def build_free_irs():
 
 <p class="fine">These links go to each publisher's own website. Lew's Apps doesn't host, sell or distribute these files and isn't affiliated with these publishers. Library names belong to their owners.</p>
 </main>"""
-    (OUT / "free-irs.html").write_text(page("Free IRs for Chamber — Lew's Apps", body,
-        desc="Free impulse-response libraries of real rooms and spaces, in stereo, surround and 3D, to use with Chamber."))
+    (OUT / "free-irs.html").write_text(page("IRs for Chamber — Lew's Apps", body,
+        desc="Impulse-response libraries of real rooms and spaces, in stereo, surround and 3D, to use with Chamber."))
 
 
 def build_index():
@@ -227,7 +227,7 @@ def build_app(a):
     <p class="summary">{e(a['summary'])}</p>
     <div class="actions">
       {download_buttons(a, 'btn primary')}
-      <a class="btn" href="{e(a['support'])}">Support</a>{'<a class="btn" href="../free-irs.html">Free IRs</a>' if a['id'] == 'chamber' else ''}
+      <a class="btn" href="{e(a['support'])}">Support</a>{'<a class="btn" href="../free-irs.html">IRs</a>' if a['id'] == 'chamber' else ''}
     </div>
   </div>
   <div class="card side">
