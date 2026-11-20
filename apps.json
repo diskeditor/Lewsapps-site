@@ -176,6 +176,23 @@
     "support": "mailto:lew@parabolicny.com?subject=Ferry%20Support"
   },
   {
+    "id": "trigger",
+    "name": "Trigger",
+    "kind": "Mac app",
+    "color": "#9b6dff",
+    "tagline": "Hotkeys and macros",
+    "summary": "Press one key combination and Trigger sends another key command, or a whole series of keystrokes, to any Mac app.",
+    "features": [
+      "Remap any key combination to another key command",
+      "Fire a series of keystrokes from one shortcut",
+      "Works with any Mac app"
+    ],
+    "version": "1.0",
+    "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Trigger-Installer.pkg",
+    "download_label": "Download",
+    "support": "mailto:lew@parabolicny.com?subject=Trigger%20Support"
+  },
+  {
     "id": "shuttle",
     "name": "Shuttle",
     "kind": "Mac app",

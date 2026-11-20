@@ -282,3 +282,10 @@ header.site .wrap { position: relative; }
 .libs .lib .actions { margin-top: auto; padding-top: 8px; }
 .libs .lib .btn.primary { background-color: color-mix(in srgb, var(--c) 45%, #1b1e23); border-color: var(--c); box-shadow: var(--edge), var(--lift), 0 0 14px color-mix(in srgb, var(--c) 40%, transparent); }
 p.fine { font-size: 13px; color: var(--muted); margin: 28px 0 40px; }
+/* two centred rows of cards */
+.grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 1264px; margin-left: auto; margin-right: auto; }
+.grid > .app { flex: 0 0 170px; width: 170px; padding-left: 12px; padding-right: 12px; }
+.grid .app > p { font-size: 13px; line-height: 1.5; }
+.grid .app h3 { font-size: 16px; }
+.grid .app .kind { font-size: 9px; letter-spacing: .08em; }
+.grid .app .req { font-size: 10.5px; }
