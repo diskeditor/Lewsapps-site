@@ -22,10 +22,12 @@
     "name": "Cone Visualizer",
     "kind": "Mac app",
     "color": "#9b6dff",
-    "tagline": "Companion to Cone",
-    "summary": "A visualizer that works alongside Cone.",
+    "tagline": "Sound as art",
+    "summary": "An artistic representation of sound, from Cone. Watch your audio come to life, or use it as a screen saver.",
     "features": [
-      "Companion app for Cone"
+      "Artistic, moving visuals drawn from your sound",
+      "Works as a screen saver",
+      "Companion to Cone"
     ],
     "version": "1.0",
     "download": "https://raw.githubusercontent.com/diskeditor/lews-apps/main/Cone-Visualizer-Installer.pkg",
