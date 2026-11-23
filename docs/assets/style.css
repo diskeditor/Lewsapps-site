@@ -289,3 +289,4 @@ p.fine { font-size: 13px; color: var(--muted); margin: 28px 0 40px; }
 .grid .app h3 { font-size: 16px; }
 .grid .app .kind { font-size: 9px; letter-spacing: .08em; }
 .grid .app .req { font-size: 10.5px; }
+footer.site .foot-disc { display: block; font-size: 11.5px; color: var(--muted); margin-top: 10px; text-align: center; }

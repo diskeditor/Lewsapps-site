@@ -60,13 +60,14 @@ def page(title, body, depth=0, desc="Pro Tools plug-ins and Mac apps for post pr
   {mid}
   <nav class="top">
     <a href="{up}index.html#support">Support</a>
+    <a href="{up}index.html#disclaimer">Disclaimer</a>
     <a class="hide-sm" href="{up}index.html#privacy">Privacy</a>
   </nav>
 </div></header>
 {body}
 <footer class="site"><div class="wrap">
   <span class="foot-p"><img class="parabolic" src="{up}assets/parabolic-logo.png" alt="Parabolic" width="600" height="146"> © {YEAR} Parabolic · New York</span>
-  <nav><a href="{up}index.html#support">Support</a><a href="{up}index.html#privacy">Privacy</a><a href="mailto:{CONTACT}">Contact</a></nav>
+  <nav><a href="{up}index.html#support">Support</a><a href="{up}index.html#privacy">Privacy</a><a href="{up}index.html#disclaimer">Disclaimer</a><a href="mailto:{CONTACT}">Contact</a></nav>
 </div></footer>
 </body>
 </html>
@@ -186,6 +187,14 @@ def build_index():
   <h2>Privacy</h2>
   <div class="cols">
     <div class="card"><p>Lew's Apps don't collect personal data, use analytics or show ads. Apps that use the network talk only to your own computers and devices. This website doesn't use cookies or tracking.</p></div>
+  </div>
+</section>
+
+<section class="block" id="disclaimer">
+  <div class="eyebrow">Disclaimer</div>
+  <h2>Beta software</h2>
+  <div class="cols">
+    <div class="card"><p>All Lew's Apps apps and plug-ins are heavily tested but are still in beta. They are provided as is, and no guarantees or warranties are expressed or implied.</p></div>
   </div>
 </section>
 </main>
