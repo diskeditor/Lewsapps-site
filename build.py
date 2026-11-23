@@ -205,7 +205,7 @@ document.querySelectorAll('.pill button').forEach(b => b.addEventListener('click
   document.querySelectorAll('.app').forEach(c => c.style.display = (f === 'all' || c.dataset.kind === f) ? '' : 'none');
 }}));
 </script>"""
-    (OUT / "index.html").write_text(page("Lew's Apps — Pro Tools plug-ins and Mac apps from Parabolic", body, mid='<div class="bar-title">Tools for post production</div>'))
+    (OUT / "index.html").write_text(page("Lew's Apps — Pro Tools plug-ins and Mac apps from Parabolic", body, mid='<div class="bar-title">Tools for post production<span class="bar-sub">Let me know if you find any of these useful</span></div>'))
 
 
 def build_app(a):
